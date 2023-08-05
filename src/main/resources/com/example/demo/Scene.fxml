@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="757.0" style="-fx-background-color: skyblue; -fx-border-color: black; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+   <children>
+      <WebView fx:id="webView" layoutX="7.0" layoutY="115.0" prefHeight="453.0" prefWidth="482.0" />
+      <Button layoutX="524.0" layoutY="72.0" mnemonicParsing="false" onAction="#loadPage" prefHeight="40.0" prefWidth="75.0" style="-fx-background-radius: 50;" text="Cargar" AnchorPane.bottomAnchor="464.0" AnchorPane.leftAnchor="524.0" AnchorPane.rightAnchor="158.0" AnchorPane.topAnchor="72.0">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextField fx:id="textField" layoutX="8.0" layoutY="80.0" onAction="#loadPage" prefHeight="25.0" prefWidth="482.0" />
+      <Button layoutX="620.0" layoutY="72.0" mnemonicParsing="false" onAction="#refreshPage" prefHeight="40.0" prefWidth="75.0" style="-fx-background-radius: 50;" text="Refrescar" />
+      <Button layoutX="524.0" layoutY="135.0" mnemonicParsing="false" onAction="#zoomIn" prefHeight="40.0" prefWidth="75.0" style="-fx-background-radius: 50;" text="Zoom In" />
+      <Button layoutX="620.0" layoutY="135.0" mnemonicParsing="false" onAction="#zoomOut" prefHeight="40.0" prefWidth="75.0" style="-fx-background-radius: 50;" text="Zoom out" />
+      <Button layoutX="563.0" layoutY="190.0" mnemonicParsing="false" onAction="#displayHistory" prefHeight="34.0" prefWidth="97.0" style="-fx-background-radius: 50;" text="Historial" />
+      <Button layoutX="526.0" layoutY="238.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="75.0" style="-fx-background-radius: 50;" text="Atras" />
+      <Button layoutX="623.0" layoutY="238.0" mnemonicParsing="false" onAction="#forward" prefHeight="40.0" prefWidth="75.0" style="-fx-background-radius: 50;" text="Adelante" />
+      <Label layoutX="33.0" layoutY="3.0" prefHeight="78.0" prefWidth="343.0" text="Web3Surfer">
+         <font>
+            <Font name="Magneto Bold" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="163.0" fitWidth="180.0" layoutX="547.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: 6;">
+         <image>
+            <Image url="@../../../../../../imagen/LogoWeb.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
